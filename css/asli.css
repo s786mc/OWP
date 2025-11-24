@@ -1,0 +1,125 @@
+
+    body {
+      font-family: 'Vazirmatn', sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1f1f1f;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #333;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      color: #fff;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .project-card {
+      background-color: #1e1e1e;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-image {
+  width: 100%;
+  height: 200px; 
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-size: 1.2rem;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+    .project-content {
+      padding: 15px;
+    }
+
+    .project-content h2 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+      color: #fff;
+    }
+
+    .project-content p {
+      margin: 0 0 15px;
+      font-size: 0.95rem;
+      color: #bbb;
+    }
+
+    .project-content a {
+      display: inline-block;
+      padding: 8px 12px;
+      background-color: #3f51b5;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .project-content a:hover {
+      background-color: #5c6bc0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #1f1f1f;
+      border-top: 1px solid #333;
+      font-size: 0.9rem;
+      color: #888;
+    }
+    header h5 {
+      margin: 0;
+      font-size: 1.2rem;
+      color: #fff;
+    }
+    .p  {
+      margin: 0;
+      font-size: 6px;
+      color: #666;
+    }
+textarea  {
+  font-family: 'Vazirmatn';
+}
+    .warn-div {
+      border-right: orange solid 6px;
+      background-color: yellow;
+      padding: 4px;
+      border-radius: 6px;
+    }
+    .warn-text {
+      font-family: 'Vazirmatn';
+      color: black;
+     font-size: 26px;
+    }
+  .warn-icon {
+  
+    font-size: 16px;
+  }
