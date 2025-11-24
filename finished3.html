@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>پروژه‌های من</title>
+  <!-- فونت ایرانی Vazirmatn -->
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Vazirmatn', sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1f1f1f;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #333;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      color: #fff;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .project-card {
+      background-color: #1e1e1e;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-image {
+  width: 100%;
+  height: 200px; 
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-size: 1.2rem;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+    .project-content {
+      padding: 15px;
+    }
+
+    .project-content h2 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+      color: #fff;
+    }
+
+    .project-content p {
+      margin: 0 0 15px;
+      font-size: 0.95rem;
+      color: #bbb;
+    }
+
+    .project-content a {
+      display: inline-block;
+      padding: 8px 12px;
+      background-color: #3f51b5;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .project-content a:hover {
+      background-color: #5c6bc0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #1f1f1f;
+      border-top: 1px solid #333;
+      font-size: 0.9rem;
+      color: #888;
+    }
+    header h5 {
+      margin: 0;
+      font-size: 1.2rem;
+      color: #fff;
+    }
+    .p  {
+      margin: 0;
+      font-size: 6px;
+      color: #666;
+    }
+textarea  {
+  font-family: 'Vazirmatn';
+}
+    .warn-div {
+      border-right: orange solid 6px;
+      background-color: yellow;
+      padding: 4px;
+      border-radius: 6px;
+    }
+    .warn-text {
+      font-family: 'Vazirmatn';
+      color: black;
+     font-size: 26px;
+    }
+  .warn-icon {
+  
+    font-size: 16px;
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>s786 || همه پروژه‌های‌وب</h1>
+  </header> <br> <br><header> <h5>
+    پروژه‌های غیر وابسته و دارای ریپ جدید:
+  </h5><p class="p">
+    پروژه هایی که ریپ جدید دارند و به این آدرس متصل نشده اند.
+  </p><p class="p" id="tkhar" dir="ltr"></p></header>
+
+  <section class="projects">
+    
+    <div class="project-card">
+      <div class="project-image">
+      <img src="./files/images/uuid.png" alt="تصویر پروژه uuid ، این تصویر برای شما باز نمی شود!" />
+      </div>
+      <div class="project-content">
+        <h2 dir="ltr">   Online UUID Generator</h2>
+        <p>
+          خیلی راحت  ، بدون محدودیت uuid بسازید . با پشتیبانی  از ۱۲زبان‌مختلف!
+        </p>
+        <a href="https://s786mc.github.io/uuid-gen">مشاهده پروژه</a>
+      </div>
+      
+    </div> <div class="project-card"> <div class="project-image">
+      <img src="./files/images/Markdown.png" alt="عکس پروژه مارک داون ، برای شما باز نمی‌شود!" />
+    </div> 
+    <div class="project-content">
+      <h2>یادگیری زبان مطلب/کد نویسی مارک داون || Markdown</h2>
+      <p>راحت این زبان را با ویرایشگر اختصاصی یاد بگیرید! ساده ترین زبان برای شروع .</p>
+      <a href="https://s786mc.github.io/Markdown">مشاهده پروژه</a>
+    </div>
+      <div class="project-card"><div class="project-image">
+        <img src="./files/images/dc.png" alt="تصویر  پروژه دندلاین ، لود نشده"> 
+      </div> 
+      <div class="project-content">
+        <h2 dir="ltr">
+          DandelionClient
+        </h2>
+        <p>
+          دندلاین‌کلاینت از کلاینت های خوبه ایرانیه  که فعلا برای بدراک ادیشن اومده و گیم رو اوپتیمایز میکنه و قابلیت های خوبی داره ، میتونی به بازی‌ات اضافه اش‌کنی!
+        </p>
+    
+      <a href="https://s786mc.github.io/DandelionClient/index">مشاهده پروژه</a>
+      </div>
+  </section>
+        <header>
+          <h5>
+            پروژه های وابسته  به OWP:
+          </h5> <p class="p">
+            پروژه وب هایی که به این آدرس وصل هستند  <br> 
+          </p>
+          <p class="p" dir="ltr">
+            s786mc.github.io/OWP/project/...
+          </p>
+        </header>
+<section class="projects">
+  <div class="warn-div">
+    <p class="warn-icon"> ‼️</p>
+    <p class="warn-text">
+      هنوز پروژه وابسته‌ای ایجاد نشده است.
+    </p>
+  </div>
+</section>
+  <footer> <form>
+  <textarea placeholder="چی تو ذهنته؟"></textarea>
+  </form>
+    <p class="p">
+      !Copyright 2025
+    </p>
+  </footer>
+</body>
+</html>
