@@ -86,5 +86,19 @@
       !Copyright 2025
     </p>
   </footer>
+<audio id="welcomeAudio">
+  <source src="./files/audio/dododo.ogg" type="audio/ogg">
+</audio>
+
+<script>
+let played = false;
+
+window.addEventListener("scroll", () => {
+    if (!played) {
+        document.getElementById("welcomeAudio").play();
+        played = true;
+    }
+});
+</script>
 </body>
 </html>
