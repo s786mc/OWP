@@ -51,7 +51,7 @@ function redirectToPhonk(phonkName) {
 
     // Simulate redirect
     setTimeout(() => {
-        alert(`In real website, you will be redirected to:\n\n${targetUrl}`);
+        alert(`No phonk with this name: to:\n\n${targetUrl}`);
         notice.classList.remove('show');
     }, 1500);
 }
