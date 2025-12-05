@@ -1,0 +1,310 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #0a0a0a;
+            color: #fff;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(138, 43, 226, 0.15) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(255, 0, 128, 0.1) 0%, transparent 20%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 2px solid rgba(138, 43, 226, 0.5);
+            margin-bottom: 40px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo-icon {
+            font-size: 2.5rem;
+            color: #8a2be2;
+            text-shadow: 0 0 10px #8a2be2;
+        }
+        
+        .logo-text {
+            font-size: 2rem;
+            font-weight: 900;
+            background: linear-gradient(to right, #8a2be2, #ff0080);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: 1px;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            color: #aaa;
+            margin-top: 5px;
+        }
+        
+        .main-title {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+        
+        .main-title h1 {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            background: linear-gradient(to right, #8a2be2, #ff0080, #00ffff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 15px rgba(138, 43, 226, 0.5);
+        }
+        
+        .main-title p {
+            font-size: 1.3rem;
+            color: #ccc;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        .selection-section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #8a2be2;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .section-title i {
+            color: #ff0080;
+        }
+        
+        .phonk-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+        }
+        .phonk-card {
+            background: rgba(20, 20, 30, 0.8);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(138, 43, 226, 0.3);
+            cursor: pointer;
+            position: relative;
+        }
+        
+        .phonk-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(138, 43, 226, 0.4);
+            border-color: #8a2be2;
+        }
+        
+        .phonk-image {
+            height: 180px;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .phonk-info {
+            padding: 20px;
+        }
+        
+        .phonk-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        
+        .phonk-artist {
+            color: #ff0080;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .phonk-desc {
+            color: #aaa;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        
+        .select-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(to right, #8a2be2, #ff0080);
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        .select-btn:hover {
+            background: linear-gradient(to right, #9b42f5, #ff3399);
+            box-shadow: 0 0 15px rgba(255, 0, 128, 0.5);
+        }
+        
+        .play-icon {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: rgba(0, 0, 0, 0.7);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #8a2be2;
+            font-size: 1.2rem;
+        }
+        
+        .custom-selection {
+            background: rgba(30, 30, 40, 0.8);
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 40px;
+            border: 1px solid rgba(0, 255, 255, 0.3);
+        }
+        
+        .custom-selection h3 {
+            color: #00ffff;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        
+        .custom-input {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .custom-input input {
+            flex: 1;
+            padding: 15px;
+            background: rgba(10, 10, 15, 0.8);
+            border: 1px solid #8a2be2;
+            border-radius: 8px;
+            color: white;
+            font-size: 1.1rem;
+        }
+        
+        .custom-input button {
+            padding: 0 30px;
+            background: linear-gradient(to right, #00ffff, #0080ff);
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .custom-input button:hover {
+            background: linear-gradient(to right, #33ffff, #3399ff);
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+        }
+        
+        .warning {
+            color: #ffcc00;
+            background: rgba(255, 204, 0, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            border-right: 4px solid #ffcc00;
+            margin-top: 30px;
+            font-size: 1rem;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(138, 43, 226, 0.3);
+            color: #777;
+            font-size: 0.9rem;
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 0.7; }
+            50% { opacity: 1; }
+            100% { opacity: 0.7; }
+        }
+        
+        @media (max-width: 768px) {
+            .phonk-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .main-title h1 {
+                font-size: 2.5rem;
+            }
+            
+            .custom-input {
+                flex-direction: column;
+            }
+        }
+        
+        .redirect-notice {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(20, 20, 30, 0.95);
+            border: 1px solid #8a2be2;
+            border-radius: 10px;
+            padding: 15px;
+            max-width: 300px;
+            box-shadow: 0 0 20px rgba(138, 43, 226, 0.5);
+            z-index: 1000;
+            display: none;
+        }
+        
+        .redirect-notice.show {
+            display: block;
+            animation: slideIn 0.5s ease;
+        }
+        
+        @keyframes slideIn {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+      .phonk-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+      }
