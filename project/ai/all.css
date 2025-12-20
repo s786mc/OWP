@@ -1,9 +1,12 @@
-
+@font-face {
+    font-family: 'Mikhak';
+    src: url('https://s786mc.github.io/PvPPacks786/fonts/Mikhak.ttf') format('truetype');
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Mikhak, system-ui, -apple-system, sans-serif;
+    font-family: 'Mikhak', system-ui, -apple-system, sans-serif;
 }
 
 :root {
